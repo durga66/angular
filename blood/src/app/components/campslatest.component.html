@@ -1,0 +1,39 @@
+
+<div class="latest"></div>
+<style>
+ th,td {
+     text-align:center;
+     border-width: 2px;
+     border-color: lightsalmon;
+}
+ </style>
+ <br>
+ <br>
+ <table border="1"
+     cellpadding="10px"
+     cellspecing="10px"
+     align="center"
+     style="font-size:20px;text-align:center">
+<thead style="background-color:gray;text-align:center">
+    <tr>
+        <th>ID</th>
+         <th>Camp Name</th>
+        <th>Date</th>
+        <th>Place</th>
+        <th>City</th>
+        <th>Pincode</th>
+        <th>Contact</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let x of blood_camps; let i= index;">
+        <td>{{i+1}}</td>
+        <td>{{x.campname}}</td>
+        <td>{{x.date}}</td>
+        <td>{{x.place}}</td>
+        <td>{{x.city}}</td>
+        <td>{{x.pincode}}</td>
+        <td>{{x.contact}}</td>
+    </tr>
+</tbody>
+</table>

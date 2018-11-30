@@ -1,0 +1,18 @@
+<div class="admindashboard">
+<br><br><br>
+<h2>    
+    <a [routerLink]="['insertcamps']">
+        <b>Insert Camps Data</b>
+    </a>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a [routerLink]="['donors']">
+        <b>Donors List</b>
+    </a>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a [routerLink]="['camps']">
+        <b>camps List</b>
+    </a>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="adminlogout()">logout</button>
+</h2>
+<br>
+<br>
+<router-outlet></router-outlet> 
+</div>

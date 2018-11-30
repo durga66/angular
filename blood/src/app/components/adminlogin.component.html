@@ -1,0 +1,26 @@
+<a [routerLink]="['/']">
+    <b>back</b>
+</a>
+<router-outlet></router-outlet>
+
+<div class="bg1">
+    <br>
+    <br>
+    <br>
+        <h3><marquee>Admin Login</marquee></h3>
+                <div class="container" align="center">
+                        <form (ngSubmit)="login({'aname':aname,'upwd':upwd})">
+                                <div class="form-group">
+                                        <label>Admin Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input type="text" [(ngModel)]="aname" name="aname">
+                         </div>
+                             <div class="form-group">
+                                      <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input type="password" [(ngModel)]="upwd" name="upwd">
+                            </div>
+                                    <div class="form-group" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             <input type="submit" class="btn btn-success">
+                    </div>
+            </form>
+        </div>
+ </div>

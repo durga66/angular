@@ -1,0 +1,46 @@
+<a [routerLink]="['/']"><b>back</b></a>
+<h2><marquee>user registration form</marquee></h2><div class="container1">
+    <form (ngSubmit)="save({'firstname':firstname,'lastname':lastname,'dob':dob,'bloodgroup':bloodgroup,'email':email,'number':number,'city':city,'password':password,'pincode':pincode})">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="firstname" class="form-control" placeholder="Enter Your Name" [(ngModel)]="firstname" required>
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lastname" [(ngModel)]="lastname" required>
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="text" class="form-control" name="dob" placeholder="dd/mm/yy" [(ngModel)]="dob" required>
+          </div>
+          <div class="form-group">
+            <label>Blood Group</label>
+            <input type="text" class="form-control" name="bloodgroup" [(ngModel)]="bloodgroup" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="number" class="form-control" name="number" [(ngModel)]="number" required>
+          </div>
+          <div class="form-group">
+            <label>City/Town/Village</label>
+            <input type="text" class="form-control" name="city" [(ngModel)]="city" required>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="password" required>
+            <p style="color:red">maximum 8 characters</p>
+          </div>
+        <div class="form-group">
+            <label>Pincode</label>
+            <input type="number" class="form-control" name="pincode" [(ngModel)]="pincode" required>
+          </div>
+          <div clas="form-group" align="center">
+              <input type="submit" class="btn btn-success">
+              </div>
+              </form>
+      
+          </div>

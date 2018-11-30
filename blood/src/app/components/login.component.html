@@ -1,0 +1,41 @@
+<br><div class="background">
+   
+<h1>
+    <marquee>Blood Details Application</marquee>
+</h1>
+<br>
+<div class="col-sm-6" align="center">
+        <div style="background-color:rgb(174, 184, 194);height: 25px;width: 25%;">
+<a [routerLink]="['adminlogin']">
+    <b>Admin Login</b>
+</a>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+        <div class="container" align="center">
+                <form (ngSubmit)="login({'number':number,'password':password})">    
+                    <div class="form-group">
+                         <label>Phone Number</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                         <input type="text" [(ngModel)]="number" name="number" placeholder="Enter Your Register Number">
+                    </div>
+                    <div class="form-group">
+                         <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" [(ngModel)]="password" name="password">
+    
+                    </div>
+                    <div class="form-group" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" class="btn btn-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a [routerLink]="['update']">
+                                <b>forgot password ?</b>
+                            </a>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a [routerLink]="['registration']">
+        <b>SignUp</b>
+    </a>
+</div>
+</form>
+</div>
+</div>

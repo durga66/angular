@@ -1,0 +1,23 @@
+<a [routerLink]="['/']">
+    <b>back</b>
+</a>
+<router-outlet></router-outlet>
+<div class="update" align="center"><br><br>
+    <h2>
+        <marquee>change your password here...</marquee>
+    </h2>
+    <br>
+    <br>
+
+<div class="update1"><br><br>
+    <label>Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="number" [(ngModel)]="number">
+<br>
+<br>
+    <label>Password</label>&nbsp;&nbsp;
+    <input type="password" [(ngModel)]="password" name="password">
+<br>
+<br>
+<button (click)="save({'number':number,'password':password})">save</button>
+</div>
+</div>

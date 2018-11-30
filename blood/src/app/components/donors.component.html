@@ -1,0 +1,38 @@
+<br>
+
+<h5 style="color:red;font-size:20px;text-align:left;">users : {{donors_count.total_count }}
+</h5>
+
+<style>
+    th,td {
+        text-align:center;
+        border-color: lightsalmon;
+        border-width: 2px;
+    }
+</style>
+    <table border="1"
+            cellpadding="10px"
+            cellspecing="10px"
+            align="center"
+            style="font-size:20px;text-align:center">
+            <thead style="background-color:gray;text-align:center">
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Group</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>City</th>
+                     <th>Pincode</th>
+            </tr>
+        </thead> 
+<tbody>
+        <tr *ngFor="let x of result">
+                <td>{{x.firstname}}</td> 
+                 <td>{{x.bloodgroup}}</td>
+                 <td>{{x.email}}</td> 
+                  <td>{{x.number}}</td> 
+                  <td>{{x.city}}</td>
+                 <td>{{x.pincode}}</td> 
+        </tr>
+    </tbody>
+</table>
